@@ -48,4 +48,15 @@ greet("Mayantha");
 function getarray(arr) {
     return arr;
 }
+//anytype in typescript
+let myVariable = "Hello";
+let anotherVariable = [1, "two", true, { name: "three" }];
+//unkonwn type in typescript
+let unknownVariable = "Hello World";
+unknownVariable.toUpperCase();
+if (typeof unknownVariable === "string") {
+    unknownVariable.toUpperCase();
+}
+unknownVariable.toUpperCase(); //typeassertion
+unknownVariable = +"42"; //typecasting to number
 //# sourceMappingURL=index.js.map

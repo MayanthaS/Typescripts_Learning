@@ -47,3 +47,16 @@ let person4:person ={
     age:23,
     hobbies:["gaming","coding"]
 };
+
+//function in typescript
+function add(a:number ,b:number):number{
+        return a+b;
+}
+function greet(name:string):void{
+    console.log("Hello, " + name);
+}
+greet("Mayantha");
+
+function getarray(arr:number[]):number[]{
+    return arr;
+}

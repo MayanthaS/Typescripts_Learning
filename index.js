@@ -37,4 +37,15 @@ let person4 = {
     age: 23,
     hobbies: ["gaming", "coding"]
 };
+//function in typescript
+function add(a, b) {
+    return a + b;
+}
+function greet(name) {
+    console.log("Hello, " + name);
+}
+greet("Mayantha");
+function getarray(arr) {
+    return arr;
+}
 //# sourceMappingURL=index.js.map

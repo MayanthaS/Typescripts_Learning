@@ -53,10 +53,24 @@ let myVariable = "Hello";
 let anotherVariable = [1, "two", true, { name: "three" }];
 //unkonwn type in typescript
 let unknownVariable = "Hello World";
-unknownVariable.toUpperCase();
+// unknownVariable.toUpperCase();
 if (typeof unknownVariable === "string") {
     unknownVariable.toUpperCase();
 }
 unknownVariable.toUpperCase(); //typeassertion
 unknownVariable = +"42"; //typecasting to number
+//cutome types in typescript
+let Emplyee;
+Emplyee = {
+    id: 1,
+    name: "Mayantha",
+    isPermanent: true
+};
+let Myname1 = "sanoj";
+let emp1 = {
+    id: 1,
+    name: "sapumal",
+    isPermanent: true
+};
+// emp1.id=2; //error readonly property cannot be changed/
 //# sourceMappingURL=index.js.map

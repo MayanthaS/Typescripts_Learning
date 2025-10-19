@@ -67,7 +67,7 @@ let anotherVariable:any = [1, "two", true, {name: "three"}];
 
 //unkonwn type in typescript
 let unknownVariable: unknown = "Hello World";
-unknownVariable.toUpperCase();
+// unknownVariable.toUpperCase();
 
 if(typeof unknownVariable==="string"){
     unknownVariable.toUpperCase();
@@ -75,3 +75,30 @@ if(typeof unknownVariable==="string"){
 
 (unknownVariable as string).toUpperCase() //typeassertion
 unknownVariable = +"42";//typecasting to number
+
+//cutome types in typescript
+let Emplyee:{
+    id: number;
+    name: string;
+    isPermanent: boolean;
+}
+Emplyee = {
+    id:1,
+    name:"Mayantha",
+    isPermanent:true 
+}
+type MyStringorNumber = string | number;
+let Myname1: MyStringorNumber="sanoj";
+
+type myEmployee ={
+    readonly id: number;
+    name: string;
+    isPermanent: boolean;
+    address?: string;//optional property {not mandatory to provide this property  }
+}
+let emp1: myEmployee ={
+    id:1,
+    name:"sapumal",
+    isPermanent:true
+};
+// emp1.id=2; //error readonly property cannot be changed/

@@ -21,3 +21,29 @@ let TDArray : number[][] =[
 ]
 
 let fixedarray: [string, number, boolean] = ["John", 25, true];
+
+//object in typescript
+let person1:{name: string; age: number} = {
+    name: "Alice",
+    age: 30
+}
+let person2: {name: string; age: number} = {
+    name: "Bob",
+    age: 28
+}
+
+type person = {
+    name: string;
+    age: number;
+    hobbies: string[];
+}
+let person3:person ={
+    name:"sapumal",
+    age:22,
+    hobbies:["reading","traveling"]
+};
+let person4:person ={
+    name:"sanoj",
+    age:23,
+    hobbies:["gaming","coding"]
+};

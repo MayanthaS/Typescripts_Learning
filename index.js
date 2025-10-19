@@ -18,4 +18,23 @@ let TDArray = [
     [7, 8, 9]
 ];
 let fixedarray = ["John", 25, true];
+//object in typescript
+let person1 = {
+    name: "Alice",
+    age: 30
+};
+let person2 = {
+    name: "Bob",
+    age: 28
+};
+let person3 = {
+    name: "sapumal",
+    age: 22,
+    hobbies: ["reading", "traveling"]
+};
+let person4 = {
+    name: "sanoj",
+    age: 23,
+    hobbies: ["gaming", "coding"]
+};
 //# sourceMappingURL=index.js.map

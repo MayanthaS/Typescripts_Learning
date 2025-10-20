@@ -73,4 +73,20 @@ let emp1 = {
     isPermanent: true
 };
 // emp1.id=2; //error readonly property cannot be changed/
+let direction = "north";
+direction = "south";
+direction = "north";
+function test(val) {
+    if (typeof val === "string") {
+        val.toUpperCase();
+    }
+    else if (typeof val === "number") {
+        val.toFixed(2);
+    }
+    else {
+        return val;
+    }
+}
+test("hello");
+test(42);
 //# sourceMappingURL=index.js.map

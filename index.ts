@@ -102,3 +102,24 @@ let emp1: myEmployee ={
     isPermanent:true
 };
 // emp1.id=2; //error readonly property cannot be changed/
+
+let direction :string = "north";
+direction = "south";
+// direction = "northeast"; //error not allowed value
+
+
+type Direction = "north" | "south" | "east" | "west";
+
+direction = "north";
+
+function test(val: string | number){
+    if(typeof val === "string"){
+         val.toUpperCase();
+    }else if(typeof val === "number"){
+         val.toFixed(2);
+    }else{
+        return val;
+    }
+}
+test("hello");
+test(42);

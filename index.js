@@ -97,4 +97,8 @@ function test(val) {
         // handle square
     }
 }
+let person5 = {
+    name: "interface person",
+    age: 30
+};
 //# sourceMappingURL=index.js.map

@@ -158,3 +158,13 @@ type CustomPoint = Point2D & {
     z:number;
 }
 
+//interfaces
+interface PersonInterface {
+    name:string;
+    age:number;
+
+}
+let person5:PersonInterface ={
+    name:"interface person",
+    age:30
+}

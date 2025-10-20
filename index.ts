@@ -168,3 +168,77 @@ let person5:PersonInterface ={
     name:"interface person",
     age:30
 }
+
+interface point2D{
+    x:number;
+    y:number;
+}
+ interface ponit3D extends point2D{
+    z:number;
+
+ }
+
+ //Generics in typescript
+ type CustomType<T> = string;
+
+ let myName:CustomType<string>= "Mayantha";
+
+ type MyObject<T> ={
+    name:string;
+    age:number;
+    data:T
+ }
+ let obj1:MyObject<T> ={
+    name:"generic",
+    age:25,
+    data:324
+ }
+ let obj2:MyObject<string> ={
+    name:"generic string",
+    age:26,
+    data:"Hello"
+ }
+ type Point ={
+    x:number;
+    y:number;
+ }
+ let obj3:MyObject<Point> ={
+    name:"generic point",
+    age:27,
+    data:{  
+        x:10,
+        y:20
+    }
+ }
+
+
+ //genric using interface
+ interface MyObjectInterface<T>{
+    name:string;
+    age:number;
+    data:T
+ }
+    let obj4:MyObjectInterface<number[]> ={
+    name:"generic array",
+    age:28,
+    data:[1,2,3,4,5]
+ }
+ let obj5:MyObjectInterface<number> ={
+    name:"generic number",
+    age:29,
+    data:100
+ };
+ //generic using function
+    function getData<T>(data:T):T{
+        return data;
+    }
+
+    function returnArray<T>(arr: T[]):T[]{
+        return arr;
+    }
+    returnArray([3, 5]);
+    returnArray(["apple", "banana"]);
+
+     
+
+    

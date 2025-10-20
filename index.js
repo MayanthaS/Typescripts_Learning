@@ -101,4 +101,42 @@ let person5 = {
     name: "interface person",
     age: 30
 };
+let myName = "Mayantha";
+let obj1 = {
+    name: "generic",
+    age: 25,
+    data: 324
+};
+let obj2 = {
+    name: "generic string",
+    age: 26,
+    data: "Hello"
+};
+let obj3 = {
+    name: "generic point",
+    age: 27,
+    data: {
+        x: 10,
+        y: 20
+    }
+};
+let obj4 = {
+    name: "generic array",
+    age: 28,
+    data: [1, 2, 3, 4, 5]
+};
+let obj5 = {
+    name: "generic number",
+    age: 29,
+    data: 100
+};
+//generic using function
+function getData(data) {
+    return data;
+}
+function returnArray(arr) {
+    return arr;
+}
+returnArray([3, 5]);
+returnArray(["apple", "banana"]);
 //# sourceMappingURL=index.js.map

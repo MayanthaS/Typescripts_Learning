@@ -143,3 +143,18 @@ function test(val: Shape) {
     }
 }
 
+//Intersection types
+type Point2D ={
+    x:number;
+    y:number;
+}
+type point3D ={
+    x:number;
+    y:number;
+    z:number;
+}
+
+type CustomPoint = Point2D & {
+    z:number;
+}
+

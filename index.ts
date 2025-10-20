@@ -111,7 +111,7 @@ direction = "south";
 type Direction = "north" | "south" | "east" | "west";
 
 direction = "north";
-
+//discriminative unions
 function test(val: string | number){
     if(typeof val === "string"){
          val.toUpperCase();

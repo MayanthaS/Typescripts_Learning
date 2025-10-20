@@ -76,6 +76,7 @@ let emp1 = {
 let direction = "north";
 direction = "south";
 direction = "north";
+//discriminative unions
 function test(val) {
     if (typeof val === "string") {
         val.toUpperCase();

@@ -111,8 +111,8 @@ direction = "south";
 type Direction = "north" | "south" | "east" | "west";
 
 direction = "north";
-//discriminative unions
-function test(val: string | number){
+
+function testValue(val: string | number){
     if(typeof val === "string"){
          val.toUpperCase();
     }else if(typeof val === "number"){
@@ -121,5 +121,25 @@ function test(val: string | number){
         return val;
     }
 }
-test("hello");
-test(42);
+testValue("hello");
+testValue(42);
+
+//discriminative unions
+type Circle ={
+    type: "circle";
+    radius: number;
+}
+type Square ={
+    type: "square";
+    width: number;
+    height: number;
+}
+type Shape = Circle | Square;
+function test(val: Shape) {
+    if(val.type === "circle"){
+        // handle circle
+    } else if(val.type === "square") {
+        // handle square
+    }
+}
+

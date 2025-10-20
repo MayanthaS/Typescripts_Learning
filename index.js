@@ -76,8 +76,7 @@ let emp1 = {
 let direction = "north";
 direction = "south";
 direction = "north";
-//discriminative unions
-function test(val) {
+function testValue(val) {
     if (typeof val === "string") {
         val.toUpperCase();
     }
@@ -88,6 +87,14 @@ function test(val) {
         return val;
     }
 }
-test("hello");
-test(42);
+testValue("hello");
+testValue(42);
+function test(val) {
+    if (val.type === "circle") {
+        // handle circle
+    }
+    else if (val.type === "square") {
+        // handle square
+    }
+}
 //# sourceMappingURL=index.js.map
